@@ -1,0 +1,128 @@
+@import "./reset";
+@import "./variables";
+
+html {
+    font-family: $main-font;
+    font-size: 62.5%;
+}
+
+body {
+    color: $white;
+    background-color: $body-bg;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: $card-bg;
+    width: 90%;
+    max-width: 35rem;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.rating img {
+    padding: 1.2rem;
+    background-color: $highlight-back;
+    border-radius: 50%;
+}
+
+.rating h1 {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+}
+
+.rating p {
+    font-size: 1.4rem;
+    color: $secondary-color;
+}
+
+.rating ul {
+    font-size: 1.4rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+
+.rating .choices {
+    color: $secondary-color;
+    height: 4rem;
+    width: 4rem;
+    padding: 0.8em;
+    border-radius: 50%;
+    background-color: $highlight-back;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0;
+    &:hover {
+        background-color: $highlight;
+        color: $white;
+    }
+    &:focus {
+        color: $highlight;
+        background-color: $white;
+    }
+}
+
+.rating .btnSubmit {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: $highlight;
+    border: 0;
+    border-radius: 3rem;
+    padding: 0.8em;
+    color: $white;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: $white;
+        color: $highlight;
+    }
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.result .selected {
+    background-color: $highlight-back;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $highlight;
+    padding: 0.5em 1em;
+    border-radius: 2.5rem;
+    margin: 2rem 0;
+}
+
+.result .appreciation {
+    font-size: 1.5rem;
+    color: $primary-color;
+}
+
+.result h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
