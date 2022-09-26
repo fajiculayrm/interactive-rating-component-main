@@ -7,7 +7,7 @@ const rateResult = document.querySelector("#rateResult");
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
         console.log(choice.innerHTML);
-        rateResult.innerHTML = choice.innerHTML;
+        rateResult.innerText = choice.innerHTML;
 
         submitBtn.addEventListener("click", () => {
             ratingContainer.classList.add("hidden");
